@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles-pages.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+</head>
+<body>   
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/work.html">My Work</a>
+        <a href="/contact.html">Contact</a>
+    </div>
+
+
+        <div class="nav-container">
+            <div class="navbar">
+                <div class="name">
+                    <a href="/index.html">Roman Fisher</a>
+                </div>
+                <div class="nav-links">
+                    <a href="/about.html">About</a>
+                    <a href="/work.html">My Work</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+                <div class="hamburger" onclick="openNav()">
+                    ☰
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="body-text">
+                Contact
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="info-text">
+                <img src="assets/email.png" alt="email-icon" class="email-icon">
+                rwfisher.22@gmail.com
+            </div>
+        </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Rubik+Mono+One&display=swap');
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 20px;
+    /* background-color: green; */
+}
+
+.name {
+    text-decoration: none;
+    font-family: 'Jacquard 12', sans-serif;
+    font-size: 64px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.name a {
+    text-decoration: none;
+    font-family: 'Jacquard 12', sans-serif;
+    font-size: 64px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.name a:hover {
+    cursor: pointer;
+}
+
+
+.nav-links {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+
+}
+
+.nav-links a:hover {
+    color: blue;
+}
+
+.navbar-alt{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px 20px;
+    /* background-color: green; */
+}
+
+.nav-links-alt {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 16px;
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links-alt a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    /* background-color: aliceblue; */
+}
+
+.nav-links a:hover {
+    color: blue;
+}
+
+/* hide hamburger by default */
+.hamburger {
+    display: none;
+    font-size: 48px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* not working */
+.hamburger:hover {
+    color: blue;
+}
+
+/* for when window gets narrow */
+@media (max-width: 850px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    font-family: 'Rubik Mono One', sans-serif;
+    padding: 8px 8px 8px 32px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: #D1CAB9;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: blue;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 6px; /* Matches the padding of .navbar */
+    right: 12px; /* Matches the padding of .navbar */
+    font-size: 48px; /* Matches the font size of the .hamburger */
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

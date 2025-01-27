@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Rubik+Mono+One&display=swap');
+
+
+body {
+    background-color: #D1CAB9;
+    margin: 0;
+    height: 100vh;
+    /* min-width: 945px; */
+
+}
+
+/* PADDING IS A PROBLEM! */
+
+.body-container {
+    max-width: 800px;
+    margin: 45px auto;
+    width: 70%;
+    /* background-color: aqua; */
+}
+
+.body-text {
+    font-family: "Red Hat Mono", monospace;
+    width: 100%;
+    letter-spacing: 2.2px;
+    word-spacing: 5px;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.info-container {
+    max-width: 500px;
+    margin: 50px auto;
+ }
+
+ .info-text {
+    font-family: "Red Hat Mono", monospace;
+    font-size: 16px;
+    letter-spacing: 2.2px;
+    text-align: center;
+ }
+
+ .email-icon {
+    width: 30px;
+    height: 20px;
+    margin-right: 8px;
+ }
+
+ /* .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    width: 70% auto;
+    margin: 100px auto;
+ }
+
+ .gallery-image {
+    max-width: 70%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 25px;
+ } */
+
+ /* grid version */
+ /* .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 25px auto;
+
+    grid-auto-rows: 1fr;
+
+ }
+
+ .gallery-container img {
+    width: 100%;
+    height: auto;
+    border: 8px;
+
+ } */
+
+ .gallery-container {
+    display: flex;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+ }
+
+ .gallery-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+
+ .gallery-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+ }
